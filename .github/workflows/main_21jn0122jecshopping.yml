@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - 21jn0122JecShopping
+name: Build and deploy PHP app to Azure Web App - 21jn0122jecshopping
 
 on:
   push:
@@ -54,7 +54,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: '21jn0122JecShopping'
+          app-name: '21jn0122jecshopping'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F8EA2B5A17124FD5BECFF6BAF00D5EC1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5BD8C86ABDB342548B3886B0AE6737AF }}
           package: .
